@@ -1,0 +1,53 @@
+{
+  "name": "raglens",
+  "version": "0.1.0",
+  "description": "RAGAS-style RAG evaluation metrics for TypeScript — faithfulness, answer relevancy, context precision & recall. Provider-agnostic, zero required runtime dependencies.",
+  "keywords": [
+    "rag",
+    "ragas",
+    "llm-evaluation",
+    "typescript",
+    "langchain",
+    "ollama",
+    "evaluation"
+  ],
+  "license": "MIT",
+  "author": "Abhisek Mishra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbhisekMishra/raglens.git"
+  },
+  "homepage": "https://github.com/AbhisekMishra/raglens#readme",
+  "bugs": "https://github.com/AbhisekMishra/raglens/issues",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.9"
+  }
+}
