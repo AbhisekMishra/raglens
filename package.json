@@ -15,7 +15,7 @@
   "author": "Abhisek Mishra",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AbhisekMishra/raglens.git"
+    "url": "git+https://github.com/AbhisekMishra/raglens.git"
   },
   "homepage": "https://github.com/AbhisekMishra/raglens#readme",
   "bugs": "https://github.com/AbhisekMishra/raglens/issues",
