@@ -1,6 +1,6 @@
 {
   "name": "raglens",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "RAGAS-style RAG evaluation metrics for TypeScript — faithfulness, answer relevancy, context precision & recall. Provider-agnostic, zero required runtime dependencies.",
   "keywords": [
     "rag",
